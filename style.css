@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-content {
+    background-color: #fff;
+    max-width: 75rem;
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    border-radius: 1.8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* Grid 1st column styling */
+
+.image-container {
+    position: relative;
+    top: 7%
+}
+
+.image-style {
+    transform: translateX(-45px);
+    width: 370px;
+}
+
+.box-style {
+    position: absolute;
+    width: 115px;
+    top: 42%;
+    transform: translateX(-37px);
+    z-index: 1;
+}
+
+/* Grid 2nd column styling */
+
+.grid-2-col {
+    margin-top: 1.2rem;
+    padding: 2.8rem;
+}
+
+.wrapper {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.heading-style {
+    color: hsl(238, 29%, 16%);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.quest-ans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.para-question {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: hsl(237, 12%, 33%);
+    transition: all 0.3s;
+}
+
+.para-question:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.para-ans {
+    font-size: 1.2rem;
+    color: hsl(240, 6%, 50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate-active {
+    transform: rotate(180deg);
+}
+
+@media (max-width:48em) {
+    .grid-content{
+        max-width: 33rem;
+        grid-template-columns: 1fr;
+    }
+
+    .heading-style {
+        text-align: center;
+    }
+
+    .image-container{
+        left: 14%;
+        top: -10%;
+        text-align: center;
+    }
+
+    .image-style {
+        width: 225px;
+    }
+
+    .box-style {
+        width: 90px;
+    }
+
+    .grid-2-col {
+        padding: 1.8rem;
+    }
+
+    .quest-ans {
+        gap: 1.6rem;
+    }
+
+}
