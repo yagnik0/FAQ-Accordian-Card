@@ -102,7 +102,7 @@ body {
 
 @media (max-width:48em) {
     .grid-content{
-        max-width: 33rem;
+        max-width: 30rem;
         grid-template-columns: 1fr;
     }
 
@@ -115,7 +115,7 @@ body {
         top: -10%;
         text-align: center;
     }
-
+    
     .image-style {
         width: 225px;
     }
