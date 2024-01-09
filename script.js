@@ -10,6 +10,13 @@ wrappers.forEach(function (wrapper) {
         arrow.classList.toggle('rotate-active')
         paraSelect.classList.toggle('hidden')
         heading.style.color = "hsl(238, 30%, 12%)"
+
+        wrappers.forEach((otherwrapper) => {
+            if (otherwrapper !== wrapper) {
+                otherwrapper.querySelector('.para-ans').classList.add('hidden')
+                otherwrapper.querySelector('.arrow').classList.remove('rotate-active')
+            }
+        })
     });
 })
 
